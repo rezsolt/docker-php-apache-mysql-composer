@@ -3,6 +3,9 @@
 This git provides a docker infrastructure for Symfony for development.
 ## Configuration
 You can modify PHP version, mySQL version, mySQL credentials and Apache HTTP port in the /.env environment file.
+When you download this branch please create your environment settings. Don't forget to create mysql root and dev user passwords.
+
+    $ cp .env.dist .env
 After modification please run 
 
     $ docker-compose build
