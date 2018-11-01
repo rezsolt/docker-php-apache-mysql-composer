@@ -20,7 +20,7 @@ services:
     depends_on:
       - db
     volumes:
-      - ./site/:/var/www/project/
+      - ./site/:/var/www/site/
       - ./.docker/phpApache/vhost/000-default.conf:/etc/apache2/sites-enabled/000-default.conf
     ports:
       - "${APACHE_HTTP_PORT}:80"
